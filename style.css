@@ -210,7 +210,7 @@ section {
   outline: none;
   font-size: 1.1rem;
   overflow: auto;
-  color: #ffffff;
+  color: #111;
   background-color: #888;
 }
 
@@ -234,6 +234,12 @@ section {
   cursor: pointer;
 }
 
-.note i:hover{
-  color: wheat;
+.note i:nth-child(1):hover{
+  color: #F6FA70;
+}
+.note i:nth-child(2):hover{
+  color: #FE0000;
+}
+.note i:nth-child(3):hover{
+  color: rgb(135, 61, 5);
 }
