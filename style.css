@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  height: 100vh;
+  background-image: url("./images/background-img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Oxygen", sans-serif;
+}
+
+.left-navbar {
+  width: 30%;
+  border: 1px solid beige;
+  /* display: none; */
+}
+
+.user{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0 1rem 0.4rem;
+    background-color: #222;
+}
+
+.img-modal {
+  display: flex;
+  align-items: center;
+}
+
+.img-modal img:nth-child(2) {
+  display: none;
+}
+
+.img-modal > img {
+  width: 5rem;
+  height: 5rem;
+  filter: contrast(2.6);
+}
+
+.modal-box {
+  display: flex;
+  justify-content: center;
+  /* flex-direction: column; */
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  padding: 1rem 2rem;
+  background: rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  display: none;
+}
+
+.modal-box > img {
+  width: 7rem;
+  height: 7rem;
+  filter: contrast(2.6);
+  cursor: pointer;
+}
+
+.modal-box i {
+  color: #ffffff;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 2.2rem;
+  position: absolute;
+}
+
+.change-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  margin-left: 0.4rem;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.6rem;
+  color: #ffffff;
+  background-color: #444;
+}
+
+/* =========================================================================== */
+
+.name-box{
+    background-color: #444;
+    padding: 1rem 0 0 0.4rem;
+}
