@@ -176,3 +176,52 @@
 .fa-close{
     font-size: 1.9rem;
 }
+
+/* =========================================================================== */
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+}
+
+.note{
+    width: 70vw;
+    background-color: #555;
+    text-align: right;
+    height: 14rem;
+    border-radius: 0.4rem;
+}
+
+.note textarea{
+    border-radius: 0.3rem;
+    padding: 0.3rem;
+    width: 100%;
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: 1.1rem;
+    overflow: auto;
+    color: #ffffff;
+    background-color: #888;
+}
+
+.note textarea::placeholder{
+    color: #333;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.note i {
+    position: relative;
+    top: 0.4rem;
+    right: 0.5rem;
+    color: #ffffff;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
