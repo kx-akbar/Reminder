@@ -27,15 +27,15 @@
   /* display: none; */
 }
 
-.user{
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0.5rem 0 1rem 0.4rem;
-    background-color: #222;
-    position: relative;
+.user {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0.5rem 0 1rem 0.4rem;
+  background-color: #222;
+  position: relative;
 }
 
 .img-modal {
@@ -96,132 +96,140 @@
 
 /* =========================================================================== */
 
-.name-box{
-    background-color: transparent;
-    padding: 1rem 0 0 0.4rem;
-    position: relative;
+.name-box {
+  background-color: transparent;
+  padding: 1rem 0 0 0.4rem;
+  position: relative;
 }
 
-.name-box > input{
-    position: absolute;
-    top: 0.7rem;
-    color: #000;
-    outline: none;
-    border: none;
-    font-size: 1.1rem;
-    border-radius: 0.3rem;
-    padding: 0.4rem 0 0.4rem 0.5rem;
-    /* display: none; */
+.name-box > input {
+  position: absolute;
+  top: 0.7rem;
+  color: #000;
+  outline: none;
+  border: none;
+  font-size: 1.1rem;
+  border-radius: 0.3rem;
+  padding: 0.4rem 0 0.4rem 0.5rem;
+  /* display: none; */
 }
 
-.name-box > input::placeholder{
-    color: #222;
+.name-box > input::placeholder {
+  color: #222;
 }
 
-.name-box h1{
-    color: #ffffff;
-    font-weight: 700;
-    position: absolute;
-    top: 0.7rem;
-    display: none;
+.name-box h1 {
+  color: #ffffff;
+  font-weight: 700;
+  position: absolute;
+  top: 0.7rem;
+  display: none;
 }
 
-.name-save{
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-weight: 700;
-    border-radius: 0.3rem;
-    padding: 0.5rem 0.1rem;
-    color: #ffffff;
-    background-color: #444;
-    margin-top: 2rem;
-    display: none;
+.name-save {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 0.3rem;
+  padding: 0.5rem 0.1rem;
+  color: #ffffff;
+  background-color: #444;
+  margin-top: 2rem;
+  display: none;
 }
 
-.control-list{
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 1.2rem;
-    background-color: transparent;
-    padding: 3rem 0 0 0.4rem;
+.control-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 1.2rem;
+  background-color: transparent;
+  padding: 3rem 0 0 0.4rem;
 }
 
-.control-list button{
-    width: 100%;
-    text-align: left;
-    padding: 0.7rem 1rem;
-    border: none;
-    color: #ffffff;
-    cursor: pointer;
-    background-color: #222;
-    border-radius: 0.5rem 0 0 0.5rem;
+.control-list button {
+  width: 100%;
+  text-align: left;
+  padding: 0.7rem 1rem;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #222;
+  border-radius: 0.5rem 0 0 0.5rem;
 }
 
-.control-list button:hover, .change-btn:hover{
-    opacity: 0.8;
+.control-list button:hover,
+.change-btn:hover {
+  opacity: 0.8;
 }
 
-.fa-bars, .fa-close{
-    cursor: pointer;
-    font-size: 1.8rem;
-    color: #fff;
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
+.fa-bars {
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-top: 0.7rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  display: none;
 }
 
-.fa-close{
-    font-size: 1.9rem;
+.fa-close {
+  cursor: pointer;
+  font-size: 1.8rem;
+  color: #fff;
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  font-size: 1.9rem;
 }
 
 /* =========================================================================== */
 
-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem 0.5rem;
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
 }
 
-.note{
-    width: 70vw;
-    background-color: #555;
-    text-align: right;
-    height: 14rem;
-    border-radius: 0.4rem;
+.note {
+  width: 70vw;
+  background-color: #555;
+  text-align: right;
+  height: 14rem;
+  border-radius: 0.4rem;
 }
 
-.note textarea{
-    border-radius: 0.3rem;
-    padding: 0.3rem;
-    width: 100%;
-    resize: none;
-    border: none;
-    outline: none;
-    font-size: 1.1rem;
-    overflow: auto;
-    color: #ffffff;
-    background-color: #888;
+.note textarea {
+  border-radius: 0.3rem;
+  padding: 0.4rem;
+  width: 100%;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  overflow: auto;
+  color: #ffffff;
+  background-color: #888;
 }
 
-.note textarea::placeholder{
-    color: #333;
+.note textarea::placeholder {
+  color: #FFF;
 }
 
-.icon{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.icon {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .note i {
-    position: relative;
-    top: 0.4rem;
-    right: 0.5rem;
-    color: #ffffff;
-    font-size: 1.3rem;
-    cursor: pointer;
+  position: relative;
+  top: 0.4rem;
+  right: 0.5rem;
+  color: #ffffff;
+  font-size: 1.3rem;
+  cursor: pointer;
 }
