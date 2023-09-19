@@ -23,7 +23,6 @@
   user-select: none;
   height: 100vh;
   background-color: #444;
-  /* border: 1px solid beige; */
   /* display: none; */
 }
 
@@ -227,9 +226,14 @@ section {
 
 .note i {
   position: relative;
-  top: 0.4rem;
+  top: 0.2rem;
+  bottom: 0.4rem;
   right: 0.5rem;
   color: #ffffff;
   font-size: 1.3rem;
   cursor: pointer;
+}
+
+.note i:hover{
+  color: wheat;
 }
