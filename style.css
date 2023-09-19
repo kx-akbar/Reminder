@@ -1,3 +1,5 @@
+/* Style */
+
 * {
   margin: 0;
   padding: 0;
@@ -18,7 +20,10 @@
 
 .left-navbar {
   width: 30%;
-  border: 1px solid beige;
+  user-select: none;
+  height: 100vh;
+  background-color: #444;
+  /* border: 1px solid beige; */
   /* display: none; */
 }
 
@@ -30,6 +35,7 @@
     align-items: flex-start;
     padding: 0.5rem 0 1rem 0.4rem;
     background-color: #222;
+    position: relative;
 }
 
 .img-modal {
@@ -50,7 +56,6 @@
 .modal-box {
   display: flex;
   justify-content: center;
-  /* flex-direction: column; */
   align-items: center;
   gap: 2rem;
   position: relative;
@@ -82,7 +87,7 @@
   outline: none;
   cursor: pointer;
   font-weight: 700;
-  margin-left: 0.4rem;
+  margin-left: 0.3rem;
   border-radius: 0.3rem;
   padding: 0.5rem 0.6rem;
   color: #ffffff;
@@ -92,6 +97,82 @@
 /* =========================================================================== */
 
 .name-box{
-    background-color: #444;
+    background-color: transparent;
     padding: 1rem 0 0 0.4rem;
+    position: relative;
+}
+
+.name-box > input{
+    position: absolute;
+    top: 0.7rem;
+    color: #000;
+    outline: none;
+    border: none;
+    font-size: 1.1rem;
+    border-radius: 0.3rem;
+    padding: 0.4rem 0 0.4rem 0.5rem;
+    /* display: none; */
+}
+
+.name-box > input::placeholder{
+    color: #222;
+}
+
+.name-box h1{
+    color: #ffffff;
+    font-weight: 700;
+    position: absolute;
+    top: 0.7rem;
+    display: none;
+}
+
+.name-save{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: 700;
+    border-radius: 0.3rem;
+    padding: 0.5rem 0.1rem;
+    color: #ffffff;
+    background-color: #444;
+    margin-top: 2rem;
+    display: none;
+}
+
+.control-list{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 1.2rem;
+    background-color: transparent;
+    padding: 3rem 0 0 0.4rem;
+}
+
+.control-list button{
+    width: 100%;
+    text-align: left;
+    padding: 0.7rem 1rem;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #222;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.control-list button:hover, .change-btn:hover{
+    opacity: 0.8;
+}
+
+.fa-bars, .fa-close{
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #fff;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+}
+
+.fa-close{
+    font-size: 1.9rem;
 }
