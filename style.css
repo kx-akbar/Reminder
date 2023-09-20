@@ -7,8 +7,8 @@
   font-family: "Oxygen", sans-serif;
 }
 
-body{
-  background-image: url("./images/background-img.jpg");
+body {
+  background-image: url("./images/back-1.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -17,8 +17,6 @@ body{
 .main {
   display: flex;
   align-items: flex-start;
-  /* justify-content: space-between; */
-  /* height: 100vh; */
   font-family: "Oxygen", sans-serif;
 }
 
@@ -27,7 +25,6 @@ body{
   user-select: none;
   height: 100vh;
   background-color: #444;
-  /* display: none; */
 }
 
 .user {
@@ -46,14 +43,12 @@ body{
   align-items: center;
 }
 
-.img-modal img:nth-child(2) {
-  display: none;
-}
-
-.img-modal > img {
-  width: 5rem;
-  height: 5rem;
-  filter: contrast(2.6);
+.img-modal img{
+  width: 5.5rem;
+  height: 4.2rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  filter: invert(200%);
 }
 
 .modal-box {
@@ -114,7 +109,6 @@ body{
   font-size: 1.1rem;
   border-radius: 0.3rem;
   padding: 0.4rem 0 0.4rem 0.5rem;
-  /* display: none; */
 }
 
 .name-box > input::placeholder {
@@ -174,7 +168,7 @@ body{
   color: #fff;
   text-align: center;
   background-color: #222;
-  padding: 0.8rem 0.9rem 93vh 0.7rem;
+  padding: 0.8rem 0.9rem 100vh 0.7rem;
   display: none;
 }
 
@@ -207,7 +201,7 @@ section {
   border-radius: 0.4rem;
 }
 
-.text{
+.text {
   border-radius: 0.3rem;
   padding: 0.4rem;
   width: 100%;
@@ -216,12 +210,12 @@ section {
   outline: none;
   font-size: 1.1rem;
   overflow: auto;
-  color: #111;
-  background-color: #888;
+  color: #fff;
+  background-color: #333;
 }
 
 .text::placeholder {
-  color: #FFF;
+  color: #fff;
 }
 
 .icon {
@@ -240,12 +234,19 @@ section {
   cursor: pointer;
 }
 
-.note i:nth-child(1):hover{
-  color: #F6FA70;
+.note i:nth-child(1):hover {
+  color: #f6fa70;
 }
-.note i:nth-child(2):hover{
-  color: #FE0000;
+.note i:nth-child(2):hover {
+  color: #fe0000;
 }
-.note i:nth-child(3):hover{
-  color: #FE0000;
+.note i:nth-child(3):hover {
+  color: #fe0000;
+}
+
+.grid-note{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  margin: 0 auto;
 }
