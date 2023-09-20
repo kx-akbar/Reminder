@@ -7,14 +7,18 @@
   font-family: "Oxygen", sans-serif;
 }
 
-.main {
-  display: flex;
-  align-items: flex-start;
-  height: 100vh;
+body{
   background-image: url("./images/background-img.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  /* justify-content: space-between; */
+  /* height: 100vh; */
   font-family: "Oxygen", sans-serif;
 }
 
@@ -168,9 +172,9 @@
   cursor: pointer;
   font-size: 1.8rem;
   color: #fff;
-  margin-top: 0.7rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  text-align: center;
+  background-color: #222;
+  padding: 0.8rem 0.9rem 93vh 0.7rem;
   display: none;
 }
 
@@ -190,18 +194,20 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0.5rem 0.5rem;
+  flex-direction: column;
+  padding: 0.5rem 0.3rem;
+  gap: 1rem;
 }
 
 .note {
-  width: 70vw;
+  width: 68vw;
   background-color: #555;
   text-align: right;
   height: 14rem;
   border-radius: 0.4rem;
 }
 
-.note textarea {
+.text{
   border-radius: 0.3rem;
   padding: 0.4rem;
   width: 100%;
@@ -214,7 +220,7 @@ section {
   background-color: #888;
 }
 
-.note textarea::placeholder {
+.text::placeholder {
   color: #FFF;
 }
 
@@ -241,5 +247,5 @@ section {
   color: #FE0000;
 }
 .note i:nth-child(3):hover{
-  color: rgb(135, 61, 5);
+  color: #FE0000;
 }
